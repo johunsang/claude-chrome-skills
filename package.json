@@ -3,9 +3,35 @@
   "version": "2.0.0",
   "type": "module",
   "description": "Claude Code + Chrome MCP 기반 웹사이트 분석 스킬 모음 (Playwright 폴백 지원)",
-  "scripts": {
-    "pw": "node playwright-runner.mjs"
+  "bin": {
+    "claude-chrome-skills": "./setup.mjs"
   },
+  "files": [
+    "setup.mjs",
+    "playwright-runner.mjs",
+    "analyzers/",
+    ".claude/commands/",
+    "README.md"
+  ],
+  "scripts": {
+    "pw": "node playwright-runner.mjs",
+    "setup": "node setup.mjs"
+  },
+  "keywords": [
+    "claude-code",
+    "chrome-mcp",
+    "web-analysis",
+    "seo",
+    "accessibility",
+    "performance",
+    "security",
+    "playwright"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johunsang/claude-chrome-skills.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "playwright": "^1.58.2"
   }
